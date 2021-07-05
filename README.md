@@ -1,5 +1,4 @@
- <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
 <body>
 <h1>MasterSilvaPT</h1>
 <h2>Welcome to my page on GitHub</h2>
