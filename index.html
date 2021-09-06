@@ -1,176 +1,182 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="script.js"></script>
-  <title>André Silva (MasterSilvaPT)</title>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <title>André Silva (MasterSilvaPT)</title>
+  </head>
 
-<body>
-  <h1 style="text-align: center;">Welcome to my personal page</h1>
-  <hr>
-  <div>
-    <h2>About Me</h2>
-    <p>Hi, my name is André Silva and I'm 20 years old.</p>
-    <p>I'm a student taking Computer Science in Faculty of Sciences of the University of Porto. <br>
-      Currently I'm enroled in the 3rd and last year of the Bachelor's Degree.</p>
-  </div>
-  <div>
-    <h2>Courses Units and Grades</h2>
-    <table border="1" style="border-collapse: collapse;">
-      <tr>
-        <td>Year</td>
-        <td>Name</td>
-        <td>Grade (0-20)</td>
-        <td>Description</td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Calculus I</td>
-        <td>14</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Discrete Structures</td>
-        <td>14</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Introduction to Computers</td>
-        <td>17</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Imperative Programming</td>
-        <td>19</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Linear Algebra and Analytic Geometry</td>
-        <td>16</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Technical Communication</td>
-        <td>16</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Calculus II</td>
-        <td>16</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Data Structures</td>
-        <td>17</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Computer Laboratory</td>
-        <td>20</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Computational Models</td>
-        <td>15</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Functional Programming</td>
-        <td>18</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Computer Architecture</td>
-        <td>17</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Algorithm Design and Analysis</td>
-        <td>15</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Digital Systems</td>
-        <td>19</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Computational Logic</td>
-        <td>16</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Probability and Statistics</td>
-        <td>14</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Software Architecture</td>
-        <td>18</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Databases</td>
-        <td>19</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Artificial Intelligence</td>
-        <td>15</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Mobile Device Programming</td>
-        <td>18</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Operating Systems</td>
-        <td>19</td>
-        <td></td>
-      </tr>
-    </table>
-  </div>
-  <div>
-    <h2>On going projects:</h2>
-    <p> -FileLocker</p>
-    <p> -DigitalAgenda</p>
-    <p> -ContactLensSchedule</p>
-  </div>
-  <div>
-    <h2>Contact Information:</h2>
-    <p>Institutional email: <a href="mailto:andresilva@edu.fc.up.pt">andresilva@edu.fc.up.pt</a></p>
-    <p>Alternative Institutional email: <a href="mailto:up201906559@edu.fc.up.pt">up201906559@edu.fc.up.pt</a></p>
-    <p>Personal email: <a href="mailto:andresilva.aer@gmail.com">andresilva.aer@gmail.com</a></p>
-    <p>Phone number: <a href="tel:+351926205258">+351 926205258</a></p>
-  </div>
-</body>
-<footer style="position: relative;">
-  <hr>
-  <h3 style="text-align: center;">Working on progress</h3>
-</footer>
-
+  <body>
+    <div id="header">
+      <h1>Welcome to my personal page</h1>
+      <hr>
+    </div>
+    <div id="aboutme">
+      <h2>About Me</h2>
+      <p>Hi, my name is André Silva and I'm 20 years old.</p>
+      <p>I'm a student taking Computer Science in Faculty of Sciences of the University of Porto. <br>
+        Currently I'm enroled in the 3rd and last year of the Bachelor's Degree.</p>
+    </div>
+    <div id="college">
+      <h2>Courses Units and Grades</h2>
+      <table id="college_fcup_units" border="1">
+        <tr>
+          <td>Year</td>
+          <td>Name</td>
+          <td>Grade (0-20)</td>
+          <td>Description</td>
+        </tr>
+        <tr>
+          <td class="year">1</td>
+          <td>Calculus I</td>
+          <td class="grade">14</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="year">1</td>
+          <td>Discrete Structures</td>
+          <td class="grade">14</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="year">1</td>
+          <td>Introduction to Computers</td>
+          <td class="grade">17</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="year">1</td>
+          <td>Imperative Programming</td>
+          <td class="grade">19</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="year">1</td>
+          <td>Linear Algebra and Analytic Geometry</td>
+          <td class="grade">16</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="year">1</td>
+          <td>Technical Communication</td>
+          <td class="grade">16</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="year">1</td>
+          <td>Calculus II</td>
+          <td class="grade">16</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="year">1</td>
+          <td>Data Structures</td>
+          <td class="grade">17</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="year">1</td>
+          <td>Computer Laboratory</td>
+          <td class="grade">20</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="year">1</td>
+          <td>Computational Models</td>
+          <td class="grade">15</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="year">1</td>
+          <td>Functional Programming</td>
+          <td class="grade">18</td>
+          <td></td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr>
+          <td class="year">2</td>
+          <td>Computer Architecture</td>
+          <td class="grade">17</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="year">2</td>
+          <td>Algorithm Design and Analysis</td>
+          <td class="grade">15</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="year">2</td>
+          <td>Digital Systems</td>
+          <td class="grade">19</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="year">2</td>
+          <td>Computational Logic</td>
+          <td class="grade">16</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="year">2</td>
+          <td>Probability and Statistics</td>
+          <td class="grade">14</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="year">2</td>
+          <td>Software Architecture</td>
+          <td class="grade">18</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="year">2</td>
+          <td>Databases</td>
+          <td class="grade">19</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="year">2</td>
+          <td>Artificial Intelligence</td>
+          <td class="grade">15</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="year">2</td>
+          <td>Mobile Device Programming</td>
+          <td class="grade">18</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="year">2</td>
+          <td>Operating Systems</td>
+          <td class="grade">19</td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    <div id="projects">
+      <h2>On going projects:</h2>
+      <a href="https://github.com/mastersilvapt/FileLocker" target="_blank">-File Locker</a><br>
+      <a href="https://github.com/mastersilvapt/DigitalAgenda" target="_blank">-Digital Agenda</a><br>
+      <a href="https://github.com/mastersilvapt/ContactLensSchedule" target="_blank">-Contact Lens Schedule</a><br>
+      <a href="https://github.com/mastersilvapt/" target="_blank">-Coming soon</a>
+    </div>
+    <div id="contacts">
+      <h2>Contact Information:</h2>
+      <p>Institutional email: <a href="mailto:andresilva@edu.fc.up.pt">andresilva@edu.fc.up.pt</a></p>
+      <p>Alternative Institutional email: <a href="mailto:up201906559@edu.fc.up.pt">up201906559@edu.fc.up.pt</a></p>
+      <p>Personal email: <a href="mailto:andresilva.aer@gmail.com">andresilva.aer@gmail.com</a></p>
+      <p>Phone number: <a href="tel:+351926205258">+351 926205258</a></p>
+    </div>
+    <div id="footer">
+      <footer>
+        <hr>
+        <h3>Working on progress</h3>
+      </footer>
+    </div>
+  </body>
 </html>
