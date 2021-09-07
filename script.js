@@ -1,12 +1,28 @@
 function average(){
-    var table = document.getElementById("college_fcup_units");
+    var table = document.getElementById('college_fcup_units');
     var sum = 0;
+    var div = 0;
+    
+    if(table == null) {
+        console.log("table null");
+        return;
+    }
+
     var rows = table.rows;
     var tr = document.createElement('tr');
     
-    for(var i = 0, row; rows.length > i ; i++){
-        sum += parseInt(table.rows[i].cells[2].innerHTLM);
+    if(rows == null){
+        console.log("rows null");
+        return;
     }
-    console.log(sum);
-    return sum;
+
+    for(var i = 1, row; i < rows.length; i++){
+        var cells = table.rows[i].cells[2];
+        if(cells == null || cells.innerText == null) continue;
+        sum += parseInt(cells.innerText);
+        div++;
+    }
+    var average = (sum / div).toFixed(1);
+    console.log(average);
+    return average;
 }
