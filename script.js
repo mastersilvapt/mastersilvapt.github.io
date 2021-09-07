@@ -22,7 +22,7 @@ function average(){
         sum += parseInt(cells.innerText);
         div++;
     }
-    var average = (sum / div).toFixed(1);
-    console.log(average);
-    return average;
+    var average = sum / div;
+    console.log(average.toString().substring(0,4));
+    return parseFloat(average.toString().substring(0,4));
 }
