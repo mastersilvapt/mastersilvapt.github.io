@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
-    <title>André Silva (MasterSilvaPT)</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <body>
-    <div id="header">
-      <h1>Welcome to my personal page</h1>
-      <hr>
-    </div>
-    <div id="aboutme">
-      <h2>About Me</h2>
-      <p>Hi, my name is André Silva and I'm 20 years old.<br>I'm a student taking Computer Science in Faculty of Sciences of the University of Porto. <br>
-        Currently I'm enroled in the 3rd and last year of the Bachelor's Degree.</p>
-    </div>
-    <div id="college">
-      <h2>Courses Units and Grades</h2>
+  <script src="script.js"></script>
+  <title>André Silva (MasterSilvaPT)</title>
+</head>
+
+<body>
+  <div id="header">
+    <h1>Welcome to my personal page</h1>
+    <hr>
+  </div>
+  <div id="aboutme">
+    <h2>About Me</h2>
+    <p>Hi, my name is André Silva and I'm 20 years old.<br>I'm a student on the 3rd year of the Bachelor's Degree in
+      Computer Science at Faculty of Sciences
+      of the University of Porto.</p>
+    <h3><a href="cv.pdf" target="_bl">Curriculum Vitae</a></h3>
+  </div>
+  <div id="college">
+    <h2>College</h2>
+    <i id="btn_bachelor_close" class="fa fa-angle-right" style="font-size:20px; display: inline;"
+      onclick="toggle(btn_bachelor_close,btn_bachelor_open,bachelor)">
+      2019-Today | Bachelor's Degree: Computer Science at FCUP </i>
+    <i id="btn_bachelor_open" class="fa fa-angle-down" style="font-size:20px; display: none;"
+      onclick="toggle(btn_bachelor_close,btn_bachelor_open,bachelor)">
+      2019-Today | Bachelor's Degree: Computer Science at FCUP </i>
+    <div id="bachelor" style="display: none;">
       <table id="college_fcup_units" border="1">
         <tr>
           <td>Year</td>
@@ -27,6 +38,7 @@
           <td>Name</td>
           <td>Grade (0-20)</td>
           <td>Description</td>
+          <td>Assignments</td>
         </tr>
         <tr>
           <td class="year">1</td>
@@ -34,6 +46,7 @@
           <td>Calculus I</td>
           <td class="grade">14</td>
           <td>Limits, Continuity, Derivatives, Antiderivatives, Integration, Polynomial aproximation, series</td>
+          <td></td>
         </tr>
         <tr>
           <td class="year">1</td>
@@ -41,6 +54,7 @@
           <td>Discrete Structures</td>
           <td class="grade">14</td>
           <td>Sets Theory, Math Induction, Basic Logic, Integer numbers, Basic Algebra, Couting, Graphs</td>
+          <td></td>
         </tr>
         <tr>
           <td class="year">1</td>
@@ -48,6 +62,7 @@
           <td>Introduction to Computers</td>
           <td class="grade">17</td>
           <td>Architecture, Assemble, Basic Circuits, Programming Languages, Operating Systems</td>
+          <td></td>
         </tr>
         <tr>
           <td class="year">1</td>
@@ -55,13 +70,17 @@
           <td>Imperative Programming</td>
           <td class="grade">19</td>
           <td>Basic C, Introduction to pointers</td>
+          <td></td>
         </tr>
         <tr>
           <td class="year">1</td>
           <td class="semester">1</td>
           <td>Linear Algebra and Analytic Geometry</td>
           <td class="grade">16</td>
-          <td>Systems of linear equations, Matrices, Determinats, Vector Space, Linear maps, Eigenvalues and Eigenvectors, Conics</td>
+          <td>Systems of linear equations, Matrices, Determinats, Vector Space, Linear maps, Eigenvalues and
+            Eigenvectors,
+            Conics</td>
+          <td></td>
         </tr>
         <tr></tr>
         <tr></tr>
@@ -71,12 +90,14 @@
           <td>Technical Communication</td>
           <td class="grade">16</td>
           <td></td>
+          <td></td>
         </tr>
         <tr>
           <td class="year">1</td>
           <td class="semester">2</td>
           <td>Calculus II</td>
           <td class="grade">16</td>
+          <td></td>
           <td></td>
         </tr>
         <tr>
@@ -85,6 +106,7 @@
           <td>Data Structures</td>
           <td class="grade">17</td>
           <td>Basic Java and Oriented Object Languages</td>
+          <td></td>
         </tr>
         <tr>
           <td class="year">1</td>
@@ -92,12 +114,14 @@
           <td>Computer Laboratory</td>
           <td class="grade">20</td>
           <td>Advanced C</td>
+          <td></td>
         </tr>
         <tr>
           <td class="year">1</td>
           <td class="semester">2</td>
           <td>Computational Models</td>
           <td class="grade">15</td>
+          <td></td>
           <td></td>
         </tr>
         <tr>
@@ -106,6 +130,7 @@
           <td>Functional Programming</td>
           <td class="grade">18</td>
           <td>Basic/Entermediate Haskell</td>
+          <td></td>
         </tr>
         <tr></tr>
         <tr></tr>
@@ -117,6 +142,7 @@
           <td>Computer Architecture</td>
           <td class="grade">17</td>
           <td></td>
+          <td></td>
         </tr>
         <tr>
           <td class="year">2</td>
@@ -124,6 +150,7 @@
           <td>Algorithm Design and Analysis</td>
           <td class="grade">15</td>
           <td>Advanced Java and Algorithms</td>
+          <td></td>
         </tr>
         <tr>
           <td class="year">2</td>
@@ -138,12 +165,14 @@
           <td>Computational Logic</td>
           <td class="grade">16</td>
           <td></td>
+          <td></td>
         </tr>
         <tr>
           <td class="year">2</td>
           <td class="semester">1</td>
           <td>Probability and Statistics</td>
           <td class="grade">14</td>
+          <td></td>
           <td></td>
         </tr>
         <tr></tr>
@@ -154,12 +183,14 @@
           <td>Software Architecture</td>
           <td class="grade">18</td>
           <td>Advanced Java, Pathers, API's, Basic UML</td>
+          <td></td>
         </tr>
         <tr>
           <td class="year">2</td>
           <td class="semester">2</td>
           <td>Databases</td>
           <td class="grade">19</td>
+          <td></td>
           <td></td>
         </tr>
         <tr>
@@ -168,6 +199,8 @@
           <td>Artificial Intelligence</td>
           <td class="grade">15</td>
           <td></td>
+          <td><a href="https://github.com/PedrV/RaSiPoGe" target="_blank">RaSiPoGe</a>, <a
+              href="https://github.com/PedrV/SUPERSET" target="_blank">SUPERSET</a></td>
         </tr>
         <tr>
           <td class="year">2</td>
@@ -175,12 +208,14 @@
           <td>Mobile Device Programming</td>
           <td class="grade">18</td>
           <td></td>
+          <td><a href="https://github.com/PedrV/fcup-pdm" target="_blank">Vanguard</a></td>
         </tr>
         <tr>
           <td class="year">2</td>
           <td class="semester">2</td>
           <td>Operating Systems</td>
           <td class="grade">19</td>
+          <td></td>
           <td></td>
         </tr>
         <tr></tr>
@@ -193,12 +228,14 @@
           <td>Compilers</td>
           <td class="grade"></td>
           <td></td>
+          <td><a href="https://github.com/mastersilvapt/Compiler" target="_blank">Compiler</a></td>
         </tr>
         <tr>
           <td class="year">3</td>
           <td class="semester">1</td>
           <td>Human-Machine Interfaces</td>
           <td class="grade"></td>
+          <td></td>
           <td></td>
         </tr>
         <tr>
@@ -207,6 +244,7 @@
           <td>Programming Challenges</td>
           <td class="grade"></td>
           <td></td>
+          <td></td>
         </tr>
         <tr>
           <td class="year">3</td>
@@ -214,12 +252,14 @@
           <td>Communication Networks</td>
           <td class="grade"></td>
           <td></td>
+          <td><a href="https://github.com/mastersilvapt/ChatRC" target="_blank">Chat</a></td>
         </tr>
         <tr>
           <td class="year">3</td>
           <td class="semester">1</td>
           <td>Semantics of Programming Languages</td>
           <td class="grade"></td>
+          <td></td>
           <td></td>
         </tr>
         <tr></tr>
@@ -230,12 +270,14 @@
           <td>Computability and Complexity</td>
           <td class="grade"></td>
           <td></td>
+          <td></td>
         </tr>
         <tr>
           <td class="year">3</td>
           <td class="semester">2</td>
           <td>Decision Support Methods</td>
           <td class="grade"></td>
+          <td></td>
           <td></td>
         </tr>
         <tr>
@@ -244,6 +286,7 @@
           <td>Concurrent Programming</td>
           <td class="grade"></td>
           <td></td>
+          <td></td>
         </tr>
         <tr>
           <td class="year">3</td>
@@ -251,30 +294,62 @@
           <td>Internship/Project</td>
           <td class="grade"></td>
           <td></td>
+          <td></td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr>
+          <td class="year">--</td>
+          <td class="semester">--</td>
+          <td>Average: </td>
+          <td id="average" class="grade">
+            <script>average();</script>
+          </td>
+          <td>--</td>
+          <td>--</td>
         </tr>
       </table>
-      <p>Average: <h id="average"><script>average();</script></h>
-      
     </div>
-    <div id="projects">
-      <h2>On going projects:</h2>
-      <a href="https://github.com/mastersilvapt/FileLocker" target="_blank">-File Locker</a><br>
-      <a href="https://github.com/mastersilvapt/DigitalAgenda" target="_blank">-Digital Agenda</a><br>
-      <a href="https://github.com/mastersilvapt/ContactLensSchedule" target="_blank">-Contact Lens Schedule</a><br>
-      <a href="https://github.com/mastersilvapt/Joe" target="_blank">-Joe Discord Bot</a><br>
-      <a href="https://github.com/mastersilvapt/" target="_blank">-Coming soon</a>
-    </div>
-    <div id="contacts">
-      <h2>Contact Information:</h2>
-      Institutional email: <a href="mailto:up201906559@edu.fc.up.pt">up201906559@edu.fc.up.pt</a><br>
-      Personal email: <a href="mailto:andresilva.aer@gmail.com">andresilva.aer@gmail.com</a><br>
-      Phone number: <a href="tel:+351926205258">+351 926205258</a>
-    </div>
-    <div id="footer">
-      <footer>
-        <hr>
-        <h3>Working on progress</h3>
-      </footer>
-    </div>
-  </body>
+
+  </div>
+  <div id="projects">
+    <h2>On going projects:</h2>
+    <a href="https://github.com/mastersilvapt/FileLocker" target="_blank">-File Locker</a><br>
+    <a href="https://github.com/mastersilvapt/DigitalAgenda" target="_blank">-Digital Agenda</a><br>
+    <a href="https://github.com/mastersilvapt/ContactLensSchedule" target="_blank">-Contact Lens Schedule</a><br>
+    <a href="https://github.com/mastersilvapt/Joe" target="_blank">-Joe Discord Bot</a><br>
+    <a href="https://github.com/mastersilvapt/" target="_blank">-Coming soon</a>
+  </div>
+  <div id="info">
+    <h2>Computer: <a href="https://www.asus.com/Laptops/For-Home/Zenbook/Zenbook-15-UX534" target="_blank">Asus Zenbook
+        15 UX534</a>
+    </h2>
+    <b>Processor:</b> I7-8565U <br>
+    <b>RAM:</b> 16GB<br>
+    <b>NVME:</b> Samsung 1TB M.2 NVMe™ PCIe® 3.0 Performance SSD<br>
+    <b>Grapics:</b> Intel UHD 620, Nvidia GTX 1650 MaxQ 4GB<br>
+    <h2>OS: <a href="https://archlinux.org/" target="_blank">Arch Linux</a></h2>
+    <b>Display Manager: </b>Xmonad<br>
+    <b>Login Manager: </b>SDDM<br>
+    <b>Session Manager: </b>LXsession<br>
+    <b>System and Service Manager: </b>Systemd<br>
+    <b>Boot manager: </b>Systemd-boot<br>
+
+  </div>
+  <div id="contacts">
+    <h2>Contact Information:</h2>
+    Institutional email: <a href="mailto:up201906559@edu.fc.up.pt">up201906559@edu.fc.up.pt</a><br>
+    Personal email: <a href="mailto:andresilva.aer@gmail.com">andresilva.aer@gmail.com</a><br>
+    Phone number: <a href="tel:+351926205258">+351 926 205 258</a>
+  </div>
+  <div id="footer">
+    <footer>
+      <hr>
+      <h3>Working on progress</h3>
+    </footer>
+  </div>
+</body>
+
 </html>
