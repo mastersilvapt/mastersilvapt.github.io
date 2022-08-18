@@ -1,7 +1,7 @@
 function average() {
     var table = document.getElementById('college_fcup_units');
-    var sum = 0;
-    var div = 0;
+    var sumEtcs = 0;
+    var sumEtcsTimesGrade = 0;
 
     if (table == null || table.rows == null) {
         console.log("table/rows null");
@@ -9,13 +9,25 @@ function average() {
     }
 
     for (var i = 1; i < table.rows.length - 1; i++) {
-        var cell = table.rows[i].cells[3];
+        var etcs = table.rows[i].cells[3];
+        var cell = table.rows[i].cells[4];
         if (cell == null || cell.innerText == null || cell.innerText == "") continue;
-        sum += parseInt(cell.innerText);
-        div++;
+        sumEtcsTimesGrade += parseInt(etcs.innerText) * parseInt(cell.innerText);
+        sumEtcs += parseInt(etcs.innerText);
     }
-    var average = sum / div;
-    document.getElementById("average").innerText = average.toString().substring(0, 4);
+    var average = sumEtcsTimesGrade / sumEtcs;
+    document.getElementById("average").innerText = average.toString().substring(0, 5);
+}
+
+function etcs(){
+    var sumEtcs = 0;
+    var table = document.getElementById('college_fcup_units');
+    for (var i = 1; i < table.rows.length - 1; i++) {
+        var etcs = table.rows[i].cells[3];
+        if (etcs == null || etcs.innerText == null || etcs.innerText == "") continue;
+        sumEtcs += parseInt(etcs.innerText);
+    }
+    document.getElementById("etcs").innerText = sumEtcs.toString();
 }
 
 function toggle(button1, button2, elem) {
