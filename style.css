@@ -4,6 +4,10 @@
     letter-spacing: 1px;
 }
 
+td {
+    border: 2px solid rgb(200, 200, 200);
+}
+
 .grade{
     text-align: center;
 }
