@@ -3,572 +3,1235 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>André Silva - Personal Portfolio</title>
 
-  <script src="script.js"></script>
-  <title>André Silva (MasterSilvaPT)</title>
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div id="header">
-    <h1>Welcome to my personal page</h1>
-    <hr>
-  </div>
-  <div id="about">
-    <h2>About Me</h2>
-    <p>Hi, my name is André Silva, and I'm 21 years old.<br>I'm a student on the 1fst year of the Master's Degree in
-      Information Security at Faculty of Sciences of the University of Porto.</p>
-    <h3><a href="cv.pdf" target="_bl">Curriculum Vitae</a></h3>
-  </div>
-  <div id="college">
-    <h2>College</h2>
-    <div id="bachelor">
-      <i id="btn_bachelor_close" class="fa fa-angle-right" style="font-size:20px; display: inline;"
-        onclick="toggle('btn_bachelor_close','btn_bachelor_open','bachelorTableDiv')">
-        2019-2022 | Bachelor's Degree: Computer Science at FCUP </i>
-      <i id="btn_bachelor_open" class="fa fa-angle-down" style="font-size:20px; display: none;"
-        onclick="toggle('btn_bachelor_close','btn_bachelor_open','bachelorTableDiv')">
-        2019-2022 | Bachelor's Degree: Computer Science at FCUP </i>
-      <div id="bachelorTableDiv" style="display: none;">
-        <table id='bachelorTable' class="college_fcup_units" style="border: 1px;">
-          <tr>
-            <td>Year</td>
-            <td>Sem.</td>
-            <td>Name</td>
-            <td>Etc</td>
-            <td>Grade (0-20)</td>
-            <td>Description</td>
-            <td>Assignments</td>
-          </tr>
-          <tr>
-            <td class="year">1</td>
-            <td class="semester">1</td>
-            <td>Calculus I</td>
-            <td class="etc">6</td>
-            <td class="grade">14</td>
-            <td>Limits, Continuity, Derivatives, Anti-derivatives, Integration, Polynomial approximation, series</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="year">1</td>
-            <td class="semester">1</td>
-            <td>Discrete Structures</td>
-            <td class="etc">6</td>
-            <td class="grade">14</td>
-            <td>Sets Theory, Math Induction, Basic Logic, Integer numbers, Basic Algebra, Counting, Graphs</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="year">1</td>
-            <td class="semester">1</td>
-            <td>Introduction to Computers</td>
-            <td class="etc">6</td>
-            <td class="grade">17</td>
-            <td>Architecture, Assemble, Basic Circuits, Programming Languages, Operating Systems</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="year">1</td>
-            <td class="semester">1</td>
-            <td>Imperative Programming</td>
-            <td class="etc">6</td>
-            <td class="grade">19</td>
-            <td>Basic C, Introduction to pointers</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="year">1</td>
-            <td class="semester">1</td>
-            <td>Linear Algebra and Analytic Geometry</td>
-            <td class="etc">6</td>
-            <td class="grade">16</td>
-            <td>Systems of linear equations, Matrices, Determinants, Vector Space, Linear maps, Eigenvalues and
-              Eigenvectors,
-              Conics</td>
-            <td></td>
-          </tr>
-          <tr></tr>
-          <tr></tr>
-          <tr>
-            <td class="year">1</td>
-            <td class="semester">2</td>
-            <td>Technical Communication</td>
-            <td class="etc">3</td>
-            <td class="grade">16</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="year">1</td>
-            <td class="semester">2</td>
-            <td>Calculus II</td>
-            <td class="etc">6</td>
-            <td class="grade">16</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="year">1</td>
-            <td class="semester">2</td>
-            <td>Data Structures</td>
-            <td class="etc">6</td>
-            <td class="grade">17</td>
-            <td>Basic Java and Oriented Object Languages</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="year">1</td>
-            <td class="semester">2</td>
-            <td>Computer Laboratory</td>
-            <td class="etc">3</td>
-            <td class="grade">20</td>
-            <td>Advanced C</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="year">1</td>
-            <td class="semester">2</td>
-            <td>Computational Models</td>
-            <td class="etc">6</td>
-            <td class="grade">15</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="year">1</td>
-            <td class="semester">2</td>
-            <td>Functional Programming</td>
-            <td class="etc">6</td>
-            <td class="grade">18</td>
-            <td>Basic/Intermediate Haskell</td>
-            <td></td>
-          </tr>
-          <tr></tr>
-          <tr></tr>
-          <tr></tr>
-          <tr></tr>
-          <tr>
-            <td class="year">2</td>
-            <td class="semester">1</td>
-            <td>Computer Architecture</td>
-            <td class="etc">6</td>
-            <td class="grade">17</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="year">2</td>
-            <td class="semester">1</td>
-            <td>Algorithm Design and Analysis</td>
-            <td class="etc">6</td>
-            <td class="grade">15</td>
-            <td>Advanced Java and Algorithms</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="year">2</td>
-            <td class="semester">1</td>
-            <td>Digital Systems</td>
-            <td class="etc">6</td>
-            <td class="grade">19</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="year">2</td>
-            <td class="semester">1</td>
-            <td>Computational Logic</td>
-            <td class="etc">6</td>
-            <td class="grade">16</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="year">2</td>
-            <td class="semester">1</td>
-            <td>Probability and Statistics</td>
-            <td class="etc">6</td>
-            <td class="grade">14</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr></tr>
-          <tr></tr>
-          <tr>
-            <td class="year">2</td>
-            <td class="semester">2</td>
-            <td>Software Architecture</td>
-            <td class="etc">6</td>
-            <td class="grade">18</td>
-            <td>Advanced Java, Patters, APIs, Basic UML</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="year">2</td>
-            <td class="semester">2</td>
-            <td>Databases</td>
-            <td class="etc">6</td>
-            <td class="grade">19</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="year">2</td>
-            <td class="semester">2</td>
-            <td>Artificial Intelligence</td>
-            <td class="etc">6</td>
-            <td class="grade">15</td>
-            <td></td>
-            <td><a href="https://github.com/PedrV/RaSiPoGe" target="_blank">RaSiPoGe</a>, <a
-                href="https://github.com/PedrV/SUPERSET" target="_blank">SUPERSET</a></td>
-          </tr>
-          <tr>
-            <td class="year">2</td>
-            <td class="semester">2</td>
-            <td>Mobile Device Programming</td>
-            <td class="etc">6</td>
-            <td class="grade">18</td>
-            <td></td>
-            <td><a href="https://github.com/PedrV/fcup-pdm" target="_blank">Vanguard</a></td>
-          </tr>
-          <tr>
-            <td class="year">2</td>
-            <td class="semester">2</td>
-            <td>Operating Systems</td>
-            <td class="etc">6</td>
-            <td class="grade">19</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr></tr>
-          <tr></tr>
-          <tr></tr>
-          <tr></tr>
-          <tr>
-            <td class="year">3</td>
-            <td class="semester">1</td>
-            <td>Compilers</td>
-            <td class="etc">6</td>
-            <td class="grade">18</td>
-            <td></td>
-            <td><a href="https://github.com/mastersilvapt/Compiler" target="_blank">Compiler</a></td>
-          </tr>
-          <tr>
-            <td class="year">3</td>
-            <td class="semester">1</td>
-            <td>Human-Machine Interfaces</td>
-            <td class="etc">6</td>
-            <td class="grade">17</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="year">3</td>
-            <td class="semester">1</td>
-            <td>Programming Challenges</td>
-            <td class="etc">6</td>
-            <td class="grade">17</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="year">3</td>
-            <td class="semester">1</td>
-            <td>Communication Networks</td>
-            <td class="etc">6</td>
-            <td class="grade">15</td>
-            <td></td>
-            <td><a href="https://github.com/mastersilvapt/ChatRC" target="_blank">Chat</a></td>
-          </tr>
-          <tr>
-            <td class="year">3</td>
-            <td class="semester">1</td>
-            <td>Semantics of Programming Languages</td>
-            <td class="etc">6</td>
-            <td class="grade">15</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr></tr>
-          <tr></tr>
-          <tr>
-            <td class="year">3</td>
-            <td class="semester">2</td>
-            <td>Computability and Complexity</td>
-            <td class="etc">6</td>
-            <td class="grade">12</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="year">3</td>
-            <td class="semester">2</td>
-            <td>Decision Support Methods</td>
-            <td class="etc">6</td>
-            <td class="grade">16</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="year">3</td>
-            <td class="semester">2</td>
-            <td>Concurrent Programming</td>
-            <td class="etc">6</td>
-            <td class="grade">17</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="year">3</td>
-            <td class="semester">2</td>
-            <td>Internship/Project</td>
-            <td class="etc">12</td>
-            <td class="grade">17</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr></tr>
-          <tr></tr>
-          <tr></tr>
-          <tr></tr>
-          <tr>
-            <td class="year">--</td>
-            <td class="semester">--</td>
-            <td>--</td>
-            <td id="bachelorEtc" class="etc"></td>
-            <script>calcEtc('bachelorTable', 'bachelorEtc');</script>
-            <td id="bachelorAverage" class="grade">
-              <script>average('bachelorTable', 'bachelorAverage');</script>
-            </td>
-            <td>--</td>
-            <td>--</td>
-          </tr>
-        </table>
-        <h2>Final Average: 17</h2>
-      </div>
-    </div>
-    <div id="masters">
-      <i id="btn_masters_close" class="fa fa-angle-right" style="font-size:20px; display: inline;"
-        onclick="toggle('btn_masters_close','btn_masters_open','mastersTableDiv')">
-        2022-Today | Master's Degree: Information Security at FCUP </i>
-      <i id="btn_masters_open" class="fa fa-angle-down" style="font-size:20px; display: none;"
-        onclick="toggle('btn_masters_close','btn_masters_open','mastersTableDiv')">
-        2022-Today | Master's Degree: Information Security at FCUP </i>
-      <div id="mastersTableDiv" style="display: none;">
-        <table id='mastersTable' class="college_fcup_units" style="border: 1px;">
-          <tr>
-            <td>Year</td>
-            <td>Sem.</td>
-            <td>Name</td>
-            <td>Etc</td>
-            <td>Grade (0-20)</td>
-            <td>Description</td>
-            <td>Assignments</td>
-          </tr>
-          <tr>
-            <td class="year">1</td>
-            <td class="semester">1</td>
-            <td>Applied Cryptography</td>
-            <td class="etc">6</td>
-            <td class="grade">14</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="year">1</td>
-            <td class="semester">1</td>
-            <td>Security Operations</td>
-            <td class="etc">6</td>
-            <td class="grade">17</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="year">1</td>
-            <td class="semester">1</td>
-            <td>Network Security</td>
-            <td class="etc">6</td>
-            <td class="grade">15</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="year">1</td>
-            <td class="semester">1</td>
-            <td>Privacy Enhancing Technologies</td>
-            <td class="etc">6</td>
-            <td class="grade">16</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="year">1</td>
-            <td class="semester">1</td>
-            <td>Theory and Practice of Security Attacks</td>
-            <td class="etc">6</td>
-            <td class="grade">17</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr></tr>
-          <tr></tr>
-          <tr>
-            <td class="year">1</td>
-            <td class="semester">2</td>
-            <td>Fraud Detection</td>
-            <td class="etc">6</td>
-            <td class="grade"></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="year">1</td>
-            <td class="semester">2</td>
-            <td>Systems and Data Security</td>
-            <td class="etc">6</td>
-            <td class="grade"></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="year">1</td>
-            <td class="semester">2</td>
-            <td>Security and Applications in Trusted Hardware</td>
-            <td class="etc">6</td>
-            <td class="grade"></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="year">1</td>
-            <td class="semester">2</td>
-            <td>Security in Software Engineering</td>
-            <td class="etc">6</td>
-            <td class="grade"></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="year">1</td>
-            <td class="semester">2</td>
-            <td>Big Data and Cloud Computing</td>
-            <td class="etc">6</td>
-            <td class="grade"></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr></tr>
-          <tr></tr>
-          <tr></tr>
-          <tr></tr>
-          <tr>
-            <td class="year">2</td>
-            <td class="semester">1</td>
-            <td>Law and Privacy</td>
-            <td class="etc">6</td>
-            <td class="grade"></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="year">2</td>
-            <td class="semester">1</td>
-            <td>Information Security Management</td>
-            <td class="etc">6</td>
-            <td class="grade"></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="year">2</td>
-            <td class="semester">1/2</td>
-            <td>Dissertation</td>
-            <td class="etc">48</td>
-            <td class="grade"></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr></tr>
-          <tr></tr>
-          <tr></tr>
-          <tr></tr>
-          <tr>
-            <td class="year">--</td>
-            <td class="semester">--</td>
-            <td>--</td>
-            <td id="mastersEtc" class="etc"></td>
-            <script>calcEtc('mastersTable', 'mastersEtc');</script>
-            <td id="mastersAverage" class="grade">
-              <script>average('mastersTable', 'mastersAverage');</script>
-            </td>
-            <td>--</td>
-            <td>--</td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  </div>
-  <div id="projects">
-    <h2>On going projects:</h2>
-    <a href="https://github.com/mastersilvapt/FileLocker" target="_blank">-File Locker</a><br>
-    <a href="https://github.com/mastersilvapt/DigitalAgenda" target="_blank">-Digital Agenda</a><br>
-    <a href="https://github.com/mastersilvapt/ContactLensSchedule" target="_blank">-Contact Lens Schedule</a><br>
-    <a href="https://github.com/mastersilvapt/Joe" target="_blank">-Joe Discord Bot</a><br>
-    <a href="https://github.com/mastersilvapt/" target="_blank">-Coming soon</a>
-  </div>
-  <div id="info">
-    <h2>Computer: <a href="https://www.asus.com/Laptops/For-Home/Zenbook/Zenbook-15-UX534" target="_blank">Asus Zenbook
-        15 UX534</a>
-    </h2>
-    <b>Processor:</b> I7-8565U <br>
-    <b>RAM:</b> 16GB<br>
-    <b>NVME:</b> Samsung 1TB M.2 NVMe PCIe 3.0 Performance SSD<br>
-    <b>Graphics:</b> Intel UHD 620, Nvidia GTX 1650 MaxQ 4GB<br>
-    <h2>Operating Systems</h2>
-    <ol>
-      <li>
-        <h3><a href="https://archlinux.org/" target="_blank">Arch Linux</a></h3>
-        <ul>
-          <li><b>Display Manager: </b>Xmonad<br></li>
-          <li><b>Login Manager: </b>SDDM<br></li>
-          <li><b>Session Manager: </b> LXSession<br></li>
-          <li><b>System and Service Manager: </b>Systemd<br></li>
-          <li><b>Boot manager: </b>Systemd-boot<br></li>
-        </ul>
-      </li>
-      <li>
-        <h3><a href="https://spins.fedoraproject.org/kde" target="_blank">Fedora 36 KDE Plasma Desktop</a></h3>
-        <ul>
-          <li><b>Display Manager: </b>KDE Plasma<br></li>
-          <li><b>Login Manager: </b>SDDM<br></li>
-          <li><b>Session Manager: </b> KMSserver<br></li>
-          <li><b>System and Service Manager: </b>Systemd<br></li>
-          <li><b>Boot manager: </b>Systemd-boot<br></li>
-        </ul>
-      </li>
-      <li>
-        <h3><a href="https://www.microsoft.com/pt-pt/windows/" target="_blank">Windows 10</a></h3>
-      </li>
-    </ol>
 
-  </div>
-  <div id="contacts">
-    <h2>Contact Information:</h2>
-    Institutional email: <a href="mailto:up201906559@edu.fc.up.pt">up201906559@edu.fc.up.pt</a><br>
-    Professional email: <a href="mailto:asilva@luxcorp.pt">asilva@luxcorp.pt</a><br>
-    Personal email: <a href="mailto:andresilva.aer@gmail.com">andresilva.aer@gmail.com</a><br>
-    <h2>Relevant Information:</h2>
-    Github: <a href="https://github.com/mastersilvapt">https://github.com/mastersilvapt</a><br>
-    This page: <a href="https://asilva.luxcorp.pt">https://asilva.luxcorp.pt</a><br>
-    This page: <a href="https://mastersilvapt.github.io">https://mastersilvapt.github.io</a><br>
+  <!--
+    - #MAIN
+  -->
 
-  </div>
-  <div id="footer">
-    <footer>
-      <hr>
-      <h3>Working on progress</h3>
-    </footer>
-  </div>
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="200">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">André Silva</h1>
+
+          <p class="title">CyberSecurity Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+
+            <div class="contact-info">
+              <p class="contact-title">Curriculum Vitae</p>
+
+              <a href="cv.pdf" class="contact-link">Download</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Personal Email</p>
+
+              <a href="mailto:asilva@luxcorp.pt" class="contact-link">asilva@luxcorp.pt</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Professor Email</p>
+
+              <a href="mailto:a.silva@fc.up.pt" class="contact-link">a.silva@fc.up.pt</a>
+            </div>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+
+          <div class="contact-info">
+            <p class="contact-title">Email</p>
+
+            <a href="mailto:asilva@dcc.fc.up.pt" class="contact-link">asilva@dcc.fc.up.pt</a>
+          </div>
+
+          </li>
+
+
+          <!--
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+351000000000" class="contact-link">+351 000 000 000</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2001-11-07">November 7, 2001</time>
+            </div>
+
+          </li>
+          -->
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Porto, Portugal</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a target="_blank" href="https://www.linkedin.com/in/asilva-mastersilvapt/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a target="_blank" href="https://github.com/mastersilvapt" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Teaching</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm Network and Security Engineer from Porto, Portugal, taking a Master's Degree in Security Information at
+            FCUP, currently working in System Administrator and Teaching at
+            University of Porto.
+          </p>
+
+          <p>
+            My job is to build your network so that it is functional and reliable but at the same time secure.
+            <!--Moreover, I add personal touch to your product and make sure that is eye-catching and easy to maintain. -->
+            My aim is not only working, is also to share my knowledge and experience with others.
+          </p>
+        </section>
+
+        <section class="about-text">
+          <p style="font-size: 150%; font-style: italic">"Choose a job you love, and you will never have to work a day in your life."</p>
+        </section>
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/education.svg" alt="design icon" width="40"> <!--TODO: Change icons-->
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Studying</h4>
+
+                <p class="service-item-text">
+                  Enrolled in <b>Master's Degree Information Security</b> and doing my thesis on "Remote Workstations with high availability systems".
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/administration.svg" alt="Web development icon" width="40"><!--TODO: Change icons-->
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">System Administrator</h4>
+
+                <p class="service-item-text">
+                  Internship at DCC-FCUP, managing networks, high availability clusters and laboratories
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/book.svg" alt="mobile app icon" width="40"><!--TODO: Change icons-->
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Teaching</h4>
+
+                <p class="service-item-text">
+                  Computer Networks, FEUP
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/research-and-development.svg" alt="camera icon" width="40"><!--TODO: Change icons-->
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Research</h4>
+
+                <p class="service-item-text">
+                  Now working on "Remote Workstations" for my thesis.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+      <!--  <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Person 1</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Text
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Person 2</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Text 2
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Person 3</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Text 3
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+-->
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="100" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Person 1</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Text
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <!--<section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>-->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Faculty of Sciences of the University of Porto</h4>
+
+              <span>2022 — Present</span>
+
+              <p class="timeline-text">
+                Master's Degree in Security Information<br>
+                Thesis: Remote Workstations, High-availability
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Faculty of Sciences of the University of Porto</h4>
+
+              <span>2019 — 2022</span>
+
+              <p class="timeline-text">
+                Batchelor's Degree in Computer Science<br>
+                Final Grade: A (17/20)
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Escola Secundária Eça de Queirós</h4>
+
+              <span>2016 — 2019</span>
+
+              <p class="timeline-text">
+                High School in Sciences and Technologies<br>
+                Creator of "PTE" (group of students with capabilities to maintain and fix computers problems)
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Research</h4>
+
+              <span>2023 — Present</span>
+
+              <p class="timeline-text">
+                Remote Workstations, High-availability, Clustering, Proxmox, Ceph, Networking
+                <!-- TODO: FILL-->
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Teacher</h4>
+
+              <span>2023 — Present</span>
+
+              <p class="timeline-text">
+                Computer Networks (RCOM), FEUP
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Internship System Administrator</h4>
+
+              <span>2022 — Present</span>
+
+              <p class="timeline-text">
+                Network Engineer, Data Center Engineer, Security Engineer
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Research</h4>
+
+              <span>2022 — 2023</span>
+
+              <p class="timeline-text">
+                PrEyevacy, ExPeRe, Privacy Awareness, Android Applications
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Java</h5>
+                <data value="95">95%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">C</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Bash</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">C++</h5>
+                <data value="65">65%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 65%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Ansible</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+<!--
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+-->
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+<!--
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+-->
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+<!--
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+-->
+            <li class="project-item  active" data-filter-item data-category="Work In Progress">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Projects</h3>
+
+                <p class="project-category">Work In Progress</p>
+
+              </a>
+            </li>
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #Teaching
+      -->
+
+      <article class="teaching" data-page="teaching">
+
+        <header>
+          <h2 class="h2 article-title">Teaching</h2>
+        </header>
+
+        <section class="teaching-posts">
+
+          <ul class="teaching-posts-list">
+
+            <li class="teaching-post-item">
+              <a href="#">
+
+                <figure class="teaching-banner-box">
+                  <img src="./assets/images/309876298_480893910747002_7740697267796704821_n.png" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="teaching-content">
+
+                  <div class="teaching-meta">
+                    <p class="teaching-category">FEUP</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2023-09-01">2023</time>
+                  </div>
+
+                  <h3 class="h3 teaching-item-title">Computers Network</h3>
+
+                  <p class="teaching-text">
+                    Visiting Assistant Professor
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+<!--
+            <li class="teaching-post-item">
+              <a href="#">
+
+                <figure class="teaching-banner-box">
+                  <img src="./assets/images/teaching-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="teaching-content">
+
+                  <div class="teaching-meta">
+                    <p class="teaching-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 teaching-item-title">Best fonts every designer</h3>
+
+                  <p class="teaching-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="teaching-post-item">
+              <a href="#">
+
+                <figure class="teaching-banner-box">
+                  <img src="./assets/images/teaching-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="teaching-content">
+
+                  <div class="teaching-meta">
+                    <p class="teaching-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 teaching-item-title">Design digest #80</h3>
+
+                  <p class="teaching-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="teaching-post-item">
+              <a href="#">
+
+                <figure class="teaching-banner-box">
+                  <img src="./assets/images/teaching-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="teaching-content">
+
+                  <div class="teaching-meta">
+                    <p class="teaching-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 teaching-item-title">UI interactions of the week</h3>
+
+                  <p class="teaching-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="teaching-post-item">
+              <a href="#">
+
+                <figure class="teaching-banner-box">
+                  <img src="./assets/images/teaching-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="teaching-content">
+
+                  <div class="teaching-meta">
+                    <p class="teaching-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 teaching-item-title">The forgotten art of spacing</h3>
+
+                  <p class="teaching-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="teaching-post-item">
+              <a href="#">
+
+                <figure class="teaching-banner-box">
+                  <img src="./assets/images/teaching-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="teaching-content">
+
+                  <div class="teaching-meta">
+                    <p class="teaching-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 teaching-item-title">Design digest #79</h3>
+
+                  <p class="teaching-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+      -->
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+           <!-- <iframe
+              src="https://www.google.com/maps/embed?
+              pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sPorto%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>-->
+            <iframe src="https://maps.google.com/maps?q=Porto&z=8&output=embed" width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+       <!-- <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="mailto:asilva@luxcorp.pt" class="form" data-form>
+
+            <div class="input-wrapper">
+              <label>
+                <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              </label>
+
+              <label>
+                <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              </label>
+            </div>
+
+            <label>
+              <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            </label>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>-->
+
+      </article>
+    </div>
+  </main>
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 

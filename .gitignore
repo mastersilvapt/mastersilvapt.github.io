@@ -1,2 +1,3 @@
-.idea/**
+old/.idea/vcs.xml
+.idea
 .vscode/**
